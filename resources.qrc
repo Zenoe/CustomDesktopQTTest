@@ -1,0 +1,7 @@
+<RCC>
+<qresource prefix="/icons">
+    <file alias="open.png">resources/icons/open.png</file>
+    <file alias="delete.png">resources/icons/delete.png</file>
+    <file alias="info.png">resources/icons/info.png</file>
+</qresource>
+</RCC>
