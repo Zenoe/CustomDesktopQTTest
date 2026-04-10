@@ -15,7 +15,27 @@ add_executable(CustomDesktopQt
     src/MainWindow.cpp
     src/DesktopWidget.h
     src/DesktopWidget.cpp
+    src/boxfilemanager.h
+    src/boxfilemanager.cpp
     resources.qrc
+
+# # wireguard
+#     src/wireguard/WireGuardDll.h
+#     src/wireguard/WireGuardDll.cpp
+#     src/wireguard/TunnelManager.h
+#     src/wireguard/TunnelManager.cpp
+#     src/wireguard/ConfigManager.h
+#     src/wireguard/ConfigManager.cpp
+#     src/wireguard/ReconnectManager.h
+#     src/wireguard/ReconnectManager.cpp
+#     src/wireguard/StatsPoller.h
+#     src/wireguard/StatsPoller.cpp
+#     src/ui/TunnelPanel.h
+#     src/ui/TunnelPanel.cpp
+#     src/ui/ConfigEditorDialog.h
+#     src/ui/ConfigEditorDialog.cpp
+#     src/ui/StatusMonitorDialog.h
+#     src/ui/StatusMonitorDialog.cpp
 )
 
 target_link_libraries(CustomDesktopQt Qt6::Widgets)

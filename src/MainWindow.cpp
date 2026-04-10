@@ -4,6 +4,12 @@
 #include <QMenu>
 #include <QAction>
 
+#include <QStandardPaths>
+
+static const QString BOX_FILE =
+QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)
++ "/desktop.box";
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
@@ -17,4 +23,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     desktop = new DesktopWidget(this);
     setCentralWidget(desktop);
+    desktop->loadFromBoxFile(BOX_FILE);
+}
+MainWindow::~MainWindow()
+{
+    desktop->saveToBoxFile(BOX_FILE);
 }
