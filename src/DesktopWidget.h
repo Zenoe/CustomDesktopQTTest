@@ -1,3 +1,4 @@
+#pragma once
 #include <QListWidget>
 #include <QMap>
 #include "boxfilemanager.h"
